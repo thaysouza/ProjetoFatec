@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Pesquisa - Fatec Itaquaquecetuba</title>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<link rel="shourtcut icon" href="imagens/d70c4397123259af07ee90f0339c8635.png"
+type="image/png">
+<script type="text/javascript">
+function validar(){
+  var nome = formuser.nome.value;
+  var email = formuser.email.value;
+  var senha = formuser.senha.value;
+
+
+  if(nome == ""){
+      alert('Preencha o campo nome! ');
+      formuser.nome.focus();
+      return false;
+  }
+
+
+  if(email == ""){
+      alert('Preencha o campo Email! ');
+      formuser.email.focus();
+      return false;
+  }
+
+  if(senha == ""){
+      alert('Preencha o campo senha! ');
+      formuser.senha.focus();
+      return false;
+  }
+
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="principal">
+
+   
+    <div id="menu"> 
+
+     <!--<img src="img/logo-sp.png" width="60">-->
+  
+     <h1 class="cadastro">Cadastre-se </h1>
+   
+    </div>
+
+    <div class="container-cadastrar">
+
+        <form name="formuser" action="enviar.php" method="post">
+            <h2>Nome:</h2>
+            <input class="cadastra" type="text" name="nome"><br>
+            <h2>Email:</h2>
+            <input class="cadastra" type="text" name="email" ><br>
+            <h2>Senha:</h2>
+            <input  class="cadastra" type="password" name="senha" ><br><br>
+         
+          
+
+   
+</div>
+
+
+<div class="container-cadastrar2">
+     <img src="img/video-vetor-2.jpg">
+    <input type="button" class="botao" name="btnEntrar" value="Cadastrar" onclick="return validar()" >
+</div>
+  
+</form>
+
+
+
+
+
+<div class="clear"> </div>
+
+
+
+<div class="rodape">
+
+
+<span >
+        <img  src="img/instagram.png" width="80px">
+         <img class="insta" src="img/whatsapp_icon-icons.com_65542.png"  width="25px">
+         <img class="insta1" src="img/face-cinza.png"  width="30px">
+  
+    
+    <strong>Todos os direitos reservados</strong> 
+
+</span>
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>
+ 
+  
+
+
